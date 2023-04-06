@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Money Convert</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Poppins:wght@200;300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/moneyStyle.css">
+</head>
+<body>
+    <div class="container">
+        <table style="border-collapse: collapse;">
+            <tr>
+                <td><label for="from">From </label></td>
+                <td>
+                    <select name="from" id="from">
+                        <option value="" class="valueKosong">===== Pilih Mata Uang =====</option>
+                        <option value="idr">idr</option>
+                        <option value="usd">usd</option>
+                        <option value="sgd">sgd</option>
+                        <option value="jpy">jpy</option>
+                        <option value="aud">aud</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="to">To </label></td>
+                <td>
+                    <select name="to" id="to">
+                        <option value="" class="valueKosong">===== Pilih Mata Uang =====</option>
+                        <option value="usd">usd</option>
+                        <option value="idr">idr</option>
+                        <option value="sgd">sgd</option>
+                        <option value="jpy">jpy</option>
+                        <option value="aud">aud</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="amount">Amount: </label></td>
+                <td><input type="number" class="amount" name="amount" id="amount"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><button type="submit" onclick="convert()">Convert</button></td>
+            </tr>
+        </table>
+    </div>
+    
+    <div class="result-display">
+        <h3 id="result"></h3>
+    </div>
+
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>
+  
